@@ -2,67 +2,126 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- viewport -->
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap link-->
+    <link rel="stylesheet" 
+    href="https://bootswatch.com/4/darkly/bootstrap.min.css" 
+    crossorigin="anonymous">
+    <!-- css link -->
+    <link rel="stylesheet" 
+    href="./assets/css/style.css">
+    <!-- title -->
     <title>Aaron Young</title>
 </head>
-
 <body>
-    <header>
-    <nav class="nav">
-        
-        <label class="logo">Aaron Young</label>
-        
-        <ul>
-            <li><a class="nav-link" href="index.html"><span style="color: white;">About</span></a></li>
-            <li><a class="nav-link" href="portfolio.html"><span style="color: white;">Portfolio</span></a></li>
-            <li><a class="nav-link" href="contact.html"><span style="color: white;">Contact</span></a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Aaron Young</a>
+        <button class="navbar-toggler" 
+        type="button" 
+        data-toggle="collapse" 
+        data-target="#navbarNavAltMarkup" 
+        aria-controls="navbarNavAltMarkup" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="nav navbar-nav ml-auto">
+                <a class="nav-item nav-link" href="./index.html">About</a>
+                <a class="nav-item nav-link active" href="./portfolio.html">Portfolio<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="./contact.html">contact</a>
+            </div>
+        </div>
     </nav>
-    </header>
-
-
-    <div class="container">
-
-        <!--main contents-->
+    <!--main contents-->
+<div class="container" id="main">
+    <div class="row">
+        <div class="col-md-12 column">
+            <h1 id="heading">Portfolio</h1>
+            <hr>
+        </div>
+    </div>
     
+    <div class="row">
+        <div class="col-md-1 column"></div>
+        <div class="col-md-10 column">
+            <!--div for bio text-->
+            <div id="port-main-text" >
+                <a href="./assets/doc/resume.pdf" target="_blank"><h3>Resume</h3></a>
 
-                <div class="container" id="main">
-                    
-                    <h1 id="heading">Portfolio</h1>
+                <a href="https://github.com/Ashaw916" target="_blank"><h3>GitHub Profile</h3></a><hr>
+                <div class="row"">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="col-md-12"><h3>Trail Locator</h3></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12"><a class="plink" href="https://github.com/Ashaw916/trail-locator" target="_blank">GitHub Repository</a></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a class="plink" href="https://ashaw916.github.io/trail-locator/" target="_blank"><img class="imglink" src="./assets/images/trail-locator.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
 
-                    <br><br><br><br><hr>
+                <div class="row"">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="col-md-12"><h3>Weather Dashboard</h3></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12"><a class="plink" href="https://github.com/Ashaw916/weather_dashboard" target="_blank">GitHub Repository</a></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a class="plink" href="https://ashaw916.github.io/weather_dashboard/" target="_blank"><img class="imglink" src="./assets/images/weather.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
 
-                    <div id="port-main-text">
-
-                        <a href="resume" target="_blank"><h3>Resume</h3></a>
-
-                        <a href="https://github.com/Ashaw916" target="_blank"><h3>GitHub Profile</h3></a>
+                <div class="row"">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="col-md-12"><h3>Scheduler</h3></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12"><a class="plink" href="https://github.com/Ashaw916/scheduler" target="_blank">GitHub Repository</a></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a class="plink" href="https://ashaw916.github.io/scheduler/" target="_blank"><img class="imglink" src="./assets/images/schedule.png" alt=""></a>
+                            </div>
+                        </div>
                         
-                        <h3>Trail Locator</h3>
-                        <a class="plink" href="https://github.com/Ashaw916/trail-locator" target="_blank">GitHub Repository</a>
-                        <a class="plink" href="https://ashaw916.github.io/trail-locator/" target="_blank"><img class="imglink" src="./assets/images/trail-locator.png" alt=""></a>
-                        <br>
-                        <h3>Weather Dashboard</h3>
-                        <a class="plink" href="https://github.com/Ashaw916/weather_dashboard" target="_blank">GitHub Repository</a>
-                        <a class="plink" href="https://ashaw916.github.io/weather_dashboard/" target="_blank"><img class="imglink" src="./assets/images/weather.png" alt=""></a>
-                        <br>
-                        <h3>Scheduler</h3>
-                        <a class="plink" href="https://github.com/Ashaw916/scheduler" target="_blank">GitHub Repository</a>
-                        <a class="plink" href="https://ashaw916.github.io/scheduler/" target="_blank"><img class="imglink" src="./assets/images/schedule.png" alt=""></a>
-                        <br>
 
                     </div>
-                    
-                    
+                    <div class="col-md-1"></div>
                 </div>
-            
-        </div>
-    <!--Footer-->
-    <div class="wrapper">
-        <footer class="page-footer">© 2020 Aaron Young</footer>
-    </div>
 
+                </div>
+            </div>
+            <div class="col-md-1 column"></div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">© 2020 Aaron Young</span>
+        </div> 
+    </footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -2,55 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- viewport -->
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap link-->
+    <link rel="stylesheet" 
+    href="https://bootswatch.com/4/darkly/bootstrap.min.css" 
+    crossorigin="anonymous">
+    <!-- css link -->
+    <link rel="stylesheet" 
+    href="./assets/css/style.css">
+    <!-- title -->
     <title>Aaron Young</title>
 </head>
-
-
 <body>
-    <header>
-    <nav class="nav">
-        
-        <label class="logo">Aaron Young</label>
-        
-        <ul>
-            <li><a href="index.html"><span style="color: white;">About</span></a></li>
-            <li><a href="portfolio.html"><span style="color: white;">Portfolio</span></a></li>
-            <li><a href="contact.html"><span style="color: white;">Contact</span></a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Aaron Young</a>
+        <button class="navbar-toggler" 
+        type="button" 
+        data-toggle="collapse" 
+        data-target="#navbarNavAltMarkup" 
+        aria-controls="navbarNavAltMarkup" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="nav navbar-nav ml-auto">
+                <a class="nav-item nav-link active" href="./index.html">About<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="./portfolio.html">Portfolio</a>
+                <a class="nav-item nav-link" href="./contact.html">contact</a>
+            </div>
+        </div>
     </nav>
-    </header>
-
-
-    <div class="container">
-
     <!--main contents-->
-        <div class="container" id="main">
-
+<div class="container" id="main">
+    <div class="row">
+        <div class="col-md-12 column">
             <h1 id="heading">About Me</h1>
-
-            <br><br><br><br><hr>
-
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 offset-md-1 column">
             <!--profile picture link-->
             <img src="./assets/images/profile_picture.jpg" id="profile-picture" alt="profile picture">
-
+           
+        </div>
+        <div class="col-md-4 column"></div>
+        <div class="col-md-3 column"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-1 column"></div>
+        <div class="col-md-10 column">
             <!--div for bio text-->
             <div id="main-text" >
-
+                <hr>
                 <!--bio-->
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam molestias dignissimos illo ab soluta, velit exercitationem maxime. Maiores provident ratione ipsam. Veniam a deserunt quae porro vitae perspiciatis molestias, distinctio vel corporis maiores asperiores pariatur inventore repellat incidunt reiciendis est. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae cumque corporis quis sed, quod pariatur! Officia aut tempore repellendus, culpa inventore magnam accusamus nemo fugiat debitis voluptates ratione omnis, nobis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae cumque corporis quis sed, quod pariatur! Officia aut tempore repellendus, culpa inventore magnam accusamus nemo fugiat debitis voluptates ratione omnis, nobis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut dolor illum id harum quisquam quaerat dicta consequuntur illo distinctio a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi atque facere nam, eius vero similique id cum at fuga ullam praesentium maxime laborum iste accusamus quis soluta nobis. Cumque, perspiciatis eaque id ratione expedita dicta nesciunt neque iste distinctio sequi quidem tenetur sint nobis odit eos laudantium culpa dolorum porro!</p>
-
-
             </div> 
         </div>
-
-    </div>
+        <div class="col-md-1 column"></div>
+    </div>  
+</div>
     <!--Footer-->
-    <div class="wrapper">
-        <footer class="page-footer">© 2020 Aaron Young</footer>
-    </div>
-
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">© 2020 Aaron Young</span>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -2,61 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- viewport -->
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap link-->
+    <link rel="stylesheet" 
+    href="https://bootswatch.com/4/darkly/bootstrap.min.css" 
+    crossorigin="anonymous">
+    <!-- css link -->
+    <link rel="stylesheet" 
+    href="./assets/css/style.css">
+    <!-- title -->
     <title>Aaron Young</title>
 </head>
-
 <body>
-    <header>
-    <nav class="nav">
-        
-        <label class="logo">Aaron Young</label>
-        
-        <ul>
-            <li><a href="index.html"><span style="color: white;">About</span></a></li>
-            <li><a href="portfolio.html"><span style="color: white;">Portfolio</span></a></li>
-            <li><a href="contact.html"><span style="color: white;">Contact</span></a></li>
-        </ul>
-    </nav>
-    </header>
-
-
-    <div class="container">
-
-        <!--main contents-->
-    
-        <div class="container" id="main">
-    
-            <h1 id="heading">Contact</h1>
-            <br><br><br><br><hr>
-            <div id="main-text">
-
-                    <div class="container">
-                        <form action="/action_page.php">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your name...">
-
-                            <label for="email">E-mail</label>
-                            <input type="text" id="lname" name="lastname" placeholder="Your e-mail..">
-
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" placeholder="Write something..." style="height:200px"></textarea>
-
-                            <input type="submit" value="Submit">
-                        </form>
-                    </div>
-
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Aaron Young</a>
+            <button class="navbar-toggler" 
+            type="button" 
+            data-toggle="collapse" 
+            data-target="#navbarNavAltMarkup" 
+            aria-controls="navbarNavAltMarkup" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="nav navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="./index.html">About</a>
+                    <a class="nav-item nav-link" href="./portfolio.html">Portfolio</a>
+                    <a class="nav-item nav-link active" href="./contact.html">contact<span class="sr-only">(current)</span></a>
+                </div>
             </div>
-
-
-        </div>  
+        </nav>
+        <!--main contents-->
+    <div class="container" id="main">
+        <div class="row">
+            <div class="col-md-12 column">
+                <h1 id="heading">Contact</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Name</label>
+                         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput2">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+                      </div>
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput3">subject</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput3">
+                        </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                  </form>
+            </div>
+            <div class="col-md-1"></div>
+        </div> 
     </div>
     <!--Footer-->
-    <div class="wrapper footer">
-        <footer class="page-footer">© 2020 Aaron Young</footer>
-    </div>
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">© 2020 Aaron Young</span>
+        </div>
+    </footer>
 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
