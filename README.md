@@ -1,5 +1,5 @@
 # Portfolio
-## Description
+
 A responsive portfolio of my work.
 ## Table of Contents
 - License
