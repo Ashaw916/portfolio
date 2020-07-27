@@ -31,6 +31,7 @@
                 <div class="nav navbar-nav ml-auto">
                     <a class="nav-item nav-link" href="./index.html">About</a>
                     <a class="nav-item nav-link" href="./portfolio.html">Portfolio</a>
+                    <a class="nav-item nav-link " href="./resume.html">Resume</a>
                     <a class="nav-item nav-link active" href="./contact.html">contact<span class="sr-only">(current)</span></a>
                 </div>
             </div>
@@ -46,23 +47,25 @@
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10">
-                <form>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Name</label>
-                         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
+                <form action="mailto:a.s.young530@gmail.com" method="get" enctype="text/plain" class="form">
+                    <div>
+                      <!-- <label for="name">Name:
+                        <input type="text" name="name" id="name"/>
+                      </label>
                     </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput2">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
-                      </div>
-                    <div class="form-group">
-                        <div class="form-group">
-                            <label for="exampleFormControlInput3">subject</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput3">
-                        </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <div>
+                      <label for="email">Email:
+                        <input type="text" name="email" id="email" />
+                      </label>
+                    </div>
+                    <div>
+                      <label>Comments:</label>
+                      <br />
+                      <textarea name="comments" rows="12" cols="35" placeholder="Youre message here." id="text"></textarea>
+                    </div>
+                    <div> -->
+                      <input type="submit" class="btn btn-light" name="submit" value="Email" />
+                      <!-- <input type="reset" name="reset" value="Clear Form" /> -->
                     </div>
                   </form>
             </div>
@@ -79,5 +82,11 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script>
+
+    // var email = function {
+    //     window.open('mailto:a.s.young530@gmail.com?subject=subject&body=text');
+    // }
+</script>
 </body>
 </html>
